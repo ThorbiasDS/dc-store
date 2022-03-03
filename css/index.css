@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 9vh;
+    margin-left: 15vw;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+h1{
+    margin-top: 15vh;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    height: 11vh;
+}
+
+.nav-list{
+    margin-left: 65vw;
+    display: flex;
+}
+
+.nav-list li{
+    list-style: none;
+    margin-left: 35%;
+}
