@@ -1,6 +1,18 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #64b5f6;
+}
+
+header{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header a{
@@ -8,20 +20,9 @@ header a{
     text-decoration: none;
 }
 
-.logo img{
-    width: 9vh;
+header img{
+    width: 10vh;
     margin-left: 15vw;
-}
-
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-h1{
-    margin-top: 15vh;
 }
 
 header nav{
@@ -29,7 +30,7 @@ header nav{
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background: #000;
-    height: 11vh;
+    height: 13vh;
 }
 
 .nav-list{
@@ -40,4 +41,73 @@ header nav{
 .nav-list li{
     list-style: none;
     margin-left: 35%;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 250%;
+}
+
+.slider{
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li{
+    list-style: none;
+    position: absolute;
+}
+
+.slider img{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input{
+    display: none;
+}
+
+.slider label{
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label{
+    left: 10px;
+}
+
+.slider li:nth-child(2) label{
+    left: 40px;
+}
+
+.slider li:nth-child(3) label{
+    left: 70px;
+}
+
+.slider img{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
 }
