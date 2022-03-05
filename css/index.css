@@ -111,3 +111,14 @@ h1{
     visibility: visible;
     z-index: 10;
 }
+
+#botao1, #botao2, #botao3, #botao4{
+    margin-top: 5vh;
+    color: white;
+    background-color: #000;
+    width: 5vw;
+    height: 5vh;
+    border-style: groove;
+    border-color: #fff;
+    border-radius: 10%;
+}

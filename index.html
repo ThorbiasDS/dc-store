@@ -12,12 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+    
 </head>
 
 <body>
 
-    <!-- Cabeçalho da página -->
-
+    <!-- Cabeçalho da página contendo a barra de navegação -->
     <header>
         <nav>
             <a href="index.html"><img src="./img/Logomarca.png" alt="Logomarca da loja"></a>
@@ -33,14 +33,14 @@
     <!-- Parte principal do site -->
     <main>
         <h1>Welcome to DC Store!</h1>
-        <!-- Carrossel -->
 
+        <!-- Carrossel com alguns produtos da loja-->
         <section>
             <ul class="slider">
                 <li>
                     <input type="radio" name="slide" id="slide1" checked>
                     <label for="slide1"></label>
-                    <img src="./img/Carousel 3.png" alt="">
+                    <img src="./img/Carousel 1.png" alt="">
                 </li>
                 <li>
                     <input type="radio" name="slide" id="slide2" checked>
@@ -50,26 +50,53 @@
                 <li>
                     <input type="radio" name="slide" id="slide3" checked>
                     <label for="slide3"></label>
-                    <img src="./img/Carousel 1.png" alt="">
+                    <img src="./img/Carousel 3.png" alt="">
                 </li>
             </ul>
         </section>
 
         <!-- Navegação entre os tipos de produtos -->
-        <nav>
-            <ul>
-                <li><a href="">Shirts</a></li>
-                <li><a href="">Caps</a></li>
-                <li><a href="">Mugs</a></li>
-                <li><a href="">Collectibles</a></li>
-            </ul>
+        <nav class="botoes">
+            <button id="botao1">SHIRTS</button>
+            <button id="botao2">CAPS</button>
+            <button id="botao3">MUGS</button>
+            <button id="botao4">DOLLS</button>
         </nav>
+
+        <section id="produtos1">
+            <img src="./img/Camiseta 1.png" alt="">
+            <img src="./img/Camiseta 2.png" alt="">
+            <img src="./img/Camiseta 3.png" alt="">
+            <img src="./img/Camiseta 4.png" alt="">
+        </section>
+
+        <section id="produtos2">
+            <img src="./img/Bone 1.png" alt="">
+            <img src="./img/Bone 2.png" alt="">
+            <img src="./img/Bone 3.png" alt="">
+            <img src="./img/Bone 4.png" alt="">
+        </section>
+
+        <section id="produtos3">
+            <img src="./img/Caneca 1.png" alt="">
+            <img src="./img/Caneca 2.png" alt="">
+            <img src="./img/Caneca 3.png" alt="">
+            <img src="./img/Caneca 4.png" alt="">
+        </section>
+
+        <section id="produtos4">
+            <img src="./img/Boneco 1.png" alt="">
+            <img src="./img/Boneco 2.png" alt="">
+            <img src="./img/Boneco 3.png" alt="">
+            <img src="./img/Boneco 4.png" alt="">
+        </section>
+
         <!-- Recursos laterais à navegação de produtos -->
         <aside>
             <ul>
-                <li><a href="">Descubra qual herói da DC você é!</a></li>
-                <li><a href="">Descubra qual vilão da DC você é!</a></li>
-                <li><a href="">Descubra qual anti-herói da DC você é!</a></li>
+                <li><a href="">Find out which DC hero you are!</a></li>
+                <li><a href="">Find out which DC villain you are!</a></li>
+                <li><a href="">Find out which DC anti-hero you are!</a></li>
             </ul>
         </aside>
         <!-- Seção de vídeos de partes de filmes -->
@@ -87,6 +114,8 @@
         <p>2022 © Thorbias Invernal - Todos os direitos reservados.</p>
         <p>Administrado por Tobias Daniel e Desenvolvido por Tobias Daniel.</p>
     </footer>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
